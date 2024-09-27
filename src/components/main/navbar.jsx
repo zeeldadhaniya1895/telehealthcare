@@ -40,7 +40,7 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="px-4 py-2 bg-white text-blue-900 rounded-full shadow-md hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105">
+            <a className="px-4 py-2 bg-white text-blue-900 rounded-full shadow-md hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105">
               Login
             </a>
           </li>

@@ -5,6 +5,7 @@ import { SessionProvider } from "next-auth/react";
 import { auth } from "@/(auth)/auth";
 import "./globals.css";
 import NavBar from "@/components/main/navbar";
+import SearchBox from "@/components/main/search";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +36,7 @@ export default async function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <NavBar />
+          <SearchBox />
           {children}
         </body>
       </html>
