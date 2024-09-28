@@ -92,3 +92,15 @@ model Card {
   description String   // Description below the image
   createdAt   DateTime @default(now()) // Auto timestamp
 }
+
+model Doctor {
+  id            Int     @id @default(autoincrement()) // Primary key with auto-increment
+  name          String  // Name of the doctor
+  specialty     String  // Specialty of the doctor
+  degree        String  // Degree of the doctor
+  rating        Float?  // Rating (decimal with 2 precision)
+  consultingFee Int     // Consulting fee (in Integer)
+  description   String  // Description of the doctor
+
+  @@map("doctors") // Optional: Maps the Prisma model to an existing "doctors" table in the database
+}

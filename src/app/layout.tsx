@@ -5,7 +5,6 @@ import { SessionProvider } from "next-auth/react";
 import { auth } from "@/(auth)/auth";
 import "./globals.css";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
