@@ -84,3 +84,11 @@ model TwoFactorConfirmation{
   user User @relation(fields: [userId],references: [id],onDelete: Cascade)
   @@unique([userId])
 }
+
+model Card {
+  id          Int      @id @default(autoincrement())
+  imageUrl    String   // Path to the image on your device
+  title       String   // Title of the card
+  description String   // Description below the image
+  createdAt   DateTime @default(now()) // Auto timestamp
+}
