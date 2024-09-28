@@ -12,37 +12,6 @@ const NavBar = () => {
           Health<span className="text-blue-400">Care</span>
         </a>
 
-        {/* Navigation Links */}
-        <ul className="flex space-x-8 text-base font-medium">
-          <li>
-            <a
-              href="#"
-              className="text-gray-300 hover:text-white relative group"
-            >
-              Find Doctors
-              <span className="block h-0.5 bg-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-gray-300 hover:text-white relative group"
-            >
-              Video Consult
-              <span className="block h-0.5 bg-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-gray-300 hover:text-white relative group"
-            >
-              Chat with Doctor
-              <span className="block h-0.5 bg-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-          </li>
-        </ul>
-
         {/* Sign In and Login */}
         <ul className="flex space-x-6 text-base font-medium">
           <li>
