@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
 import { auth } from "@/(auth)/auth";
 import "./globals.css";
-import NavBar from "@/components/main/navbar";
-import SearchBox from "@/components/main/search";
-import BgHome from "@/components/main/bg_home";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
