@@ -8,6 +8,7 @@
 
 export const publicRoutes=[
     "/",
+    "/desboard",
     "/auth/new-verification"
 ];
 

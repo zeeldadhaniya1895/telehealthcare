@@ -2,6 +2,8 @@
 import { useSession } from "next-auth/react";
 import React from "react";
 import UserButton from "../auth/user-button";
+import { LoginButton } from "../auth/login-button";
+import { SignUpButton } from "../auth/sign-up-button";
 
 const NavBar = () => {
   const { data: session, status } = useSession(); // Get session data and status
@@ -24,20 +26,24 @@ const NavBar = () => {
         ) : (
           <ul className="flex space-x-6 text-base font-medium">
             <li>
+              <SignUpButton>
               <a
                 href="#"
                 className="px-4 py-2 bg-blue-400 text-gray-900 rounded-full shadow-md hover:bg-blue-500 transition duration-300 ease-in-out transform hover:scale-105"
               >
                 Sign In
               </a>
+              </SignUpButton>
             </li>
             <li>
+              <LoginButton>
               <a
                 href="#"
                 className="px-4 py-2 bg-gray-100 text-gray-900 rounded-full shadow-md hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105"
               >
                 Login
               </a>
+              </LoginButton>
             </li>
           </ul>
         )}
