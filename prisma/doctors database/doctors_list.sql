@@ -1,5 +1,13 @@
 -- Create the doctors table
-
+CREATE TABLE doctors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    specialty TEXT NOT NULL,
+    degree TEXT NOT NULL,
+    rating DECIMAL(2, 1),
+    consulting_fee INTEGER NOT NULL,
+    description TEXT NOT NULL
+);
 
 -- Insert sample data into the doctors table
 INSERT INTO doctors (name, specialty, degree, rating, consulting_fee, description) VALUES
